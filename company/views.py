@@ -7,4 +7,4 @@ def index(request):
 
 def detail(request, company_id):
     image = Image.objects.filter(id = company_id)
-    return HttpResponse('<img src="' + image[0].path + '" />')
+    return HttpResponse('<img src="' + image[0].path + '" alt="Logo" />')
